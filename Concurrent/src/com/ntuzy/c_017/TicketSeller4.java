@@ -6,11 +6,12 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedDeque;
+import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.TimeUnit;
 
 public class TicketSeller4 {
 
-    static Queue<String> tickets = new ConcurrentLinkedDeque<>();
+    static Queue<String> tickets = new ConcurrentLinkedQueue<>();
 
     static {
         for (int i = 0; i < 1000; i++) {
